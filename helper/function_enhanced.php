@@ -162,11 +162,29 @@ function getExceptionTraceAsString($exception)
             $frame['file'] = str_replace(array(TL_ROOT . '/',TL_ROOT . '\\' ), array('',''), $frame['file']); 
         }
         $args = str_replace(array(TL_ROOT . '/',TL_ROOT . '\\' ), array('',''), $args);
-        $rtn .= sprintf( "#%s %s(%s): %s(%s)\n", $count
-                                               , isset($frame['file']) ? $frame['file'] : 'unknown file'
-                                               , isset($frame['line']) ? $frame['line'] : 'unknown line'
-                                               , (isset($frame['class'])) ? $frame['class'].$frame['type'].$frame['function'] : $frame['function']
-                                               , $args );
+        
+        if ( !isset($frame['file']) ) 
+        {
+        	$frame['file'] = '[internal function';
+        	$frame['line'] = ']';
+        }
+        else 
+        {
+            if ( !isset($frame['line']) ) 
+            {
+                $frame['line'] = 'unknown line';
+            }
+            else 
+            {
+                $frame['line'] = '('.$frame['line'].')';
+            }
+        }
+        
+        $rtn .= sprintf( "#%s %s%s: %s(%s)\n", $count
+                                             , $frame['file']
+                                             , $frame['line']
+                                             , (isset($frame['class'])) ? $frame['class'].$frame['type'].$frame['function'] : $frame['function']
+                                             , $args );
         $count++;
     }
     return $rtn;
