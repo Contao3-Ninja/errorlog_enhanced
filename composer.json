@@ -34,7 +34,7 @@
 				"":"system/modules/errorlog_enhanced"
 			},
 			"transifex": {
-				"project": "contao-errorlog_enhanced",
+				"project": "contao-enhanced_errorlog",
 				"prefix": "master-",
 				"languages_cto": "languages",
 				"languages_tx": ".tx"
