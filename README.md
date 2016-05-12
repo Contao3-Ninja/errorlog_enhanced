@@ -6,7 +6,12 @@
 
 ## About
 
-"Enhanced error.log" generate the Contao error.log with complete relative file paths.
+"Enhanced error.log" generate the Contao 3 error.log with complete relative file paths.
+
+
+## User guide
+
+The current manual for the extension "Enhanced error.log" can be found here: [docs.contao.ninja][1]
 
 
 ## Example
@@ -48,8 +53,16 @@
 
 
 ## For Translators
-Translations are managed using Transifex. To create a new translation or to help to maintain an existing one, please register at transifex.com.
+Translations are managed using Transifex. To create a new translation or to help
+to maintain an existing one, please register at transifex.com.
 
-Project Link: [https://www.transifex.com/bugbuster/contao-enhanced_errorlog/](https://www.transifex.com/bugbuster/contao-enhanced_errorlog/)
+Project Link: [https://www.transifex.com/bugbuster/contao-enhanced_errorlog/][2]
 
-Howto: [http://docs.transifex.com/faq/#translating](http://docs.transifex.com/faq/#translating)
+Howto: [http://docs.transifex.com/faq/#translating][3]
+
+
+
+
+[1]: https://docs.contao.ninja
+[2]: https://www.transifex.com/bugbuster/contao-enhanced_errorlog/
+[3]: http://docs.transifex.com/faq/#translating
