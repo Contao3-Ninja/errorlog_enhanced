@@ -1,10 +1,17 @@
-# Contao 3 - error.log enhanced
+# Contao 3 - Enhanced error.log
 
-Contao error.log with complete relative file paths.
+[![Latest Stable Version](https://poser.pugx.org/bugbuster/errorlog_enhanced
+/v/stable.svg)](https://packagist.org/packages/bugbuster/errorlog_enhanced) [![Total Downloads](https://poser.pugx.org/bugbuster/errorlog_enhanced/downloads.svg)](https://packagist.org/packages/bugbuster/errorlog_enhanced) [![Latest Unstable Version](https://poser.pugx.org/bugbuster/errorlog_enhanced/v/unstable.svg)](https://packagist.org/packages/bugbuster/errorlog_enhanced) [![License](https://poser.pugx.org/bugbuster/errorlog_enhanced/license.svg)](https://packagist.org/packages/bugbuster/errorlog_enhanced)
 
-# Example
 
-Original error stack on not a valid JPEG file:
+## About
+
+"Enhanced error.log" generate the Contao error.log with complete relative file paths.
+
+
+## Example
+
+### Original error stack on not a valid JPEG file
 
 ```
 #0 [internal function]: __error(2, 'imagecreatefrom...', '/contao35_deve...', 82, Array)
@@ -22,10 +29,10 @@ Original error stack on not a valid JPEG file:
 
 **Problem:** how is the name of the not valid JPEG file?
 
-Now, the new log:
+### The new error stack on not a valid JPEG file
 
 ```
-#0 unknown file(unknown line): __error_enhanced(2, 'imagecreatefromjpeg(): 'files/contaodemo/media/demo-wrong-image.jpg' is not a valid JPEG file', 'system/modules/core/library/Contao/GdImage.php', 82, Array)
+#0 [internal function]: __error_enhanced(2, 'imagecreatefromjpeg(): 'files/contaodemo/media/demo-wrong-image.jpg' is not a valid JPEG file', 'system/modules/core/library/Contao/GdImage.php', 82, Array)
 #1 system/modules/core/library/Contao/GdImage.php(82): imagecreatefromjpeg('files/contaodemo/media/demo-wrong-image.jpg')
 #2 system/modules/core/library/Contao/Image.php(541): Contao\GdImage::fromFile(Contao\File)
 #3 system/modules/core/library/Contao/Image.php(510): Contao\Image->executeResizeGd()
@@ -38,3 +45,11 @@ Now, the new log:
 ```
 
 **Answer:** `files/contaodemo/media/demo-wrong-image.jpg`, yeah!
+
+
+## For Translators
+Translations are managed using Transifex. To create a new translation or to help to maintain an existing one, please register at transifex.com.
+
+Project Link: [https://www.transifex.com/bugbuster/contao-enhanced_errorlog/](https://www.transifex.com/bugbuster/contao-enhanced_errorlog/)
+
+Howto: [http://docs.transifex.com/faq/#translating](http://docs.transifex.com/faq/#translating)
