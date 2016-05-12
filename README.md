@@ -25,7 +25,7 @@ Original error stack on not a valid JPEG file:
 Now, the new log:
 
 ```
-#0 unknown file(unknown line): __error_enhanced(2, 'imagecreatefromjpeg(): 'files/contaodemo/media/demo-wrong-image.jpg' is not a valid JPEG file', 'system/modules/core/library/Contao/GdImage.php', 82, Array)
+#0 [internal function]: __error_enhanced(2, 'imagecreatefromjpeg(): 'files/contaodemo/media/demo-wrong-image.jpg' is not a valid JPEG file', 'system/modules/core/library/Contao/GdImage.php', 82, Array)
 #1 system/modules/core/library/Contao/GdImage.php(82): imagecreatefromjpeg('files/contaodemo/media/demo-wrong-image.jpg')
 #2 system/modules/core/library/Contao/Image.php(541): Contao\GdImage::fromFile(Contao\File)
 #3 system/modules/core/library/Contao/Image.php(510): Contao\Image->executeResizeGd()
