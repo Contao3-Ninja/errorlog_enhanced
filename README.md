@@ -1,7 +1,6 @@
 # Contao 3 - Enhanced error.log
 
-[![Latest Stable Version](https://poser.pugx.org/bugbuster/errorlog_enhanced
-/v/stable.svg)](https://packagist.org/packages/bugbuster/errorlog_enhanced) [![Total Downloads](https://poser.pugx.org/bugbuster/errorlog_enhanced/downloads.svg)](https://packagist.org/packages/bugbuster/errorlog_enhanced) [![Latest Unstable Version](https://poser.pugx.org/bugbuster/errorlog_enhanced/v/unstable.svg)](https://packagist.org/packages/bugbuster/errorlog_enhanced) [![License](https://poser.pugx.org/bugbuster/errorlog_enhanced/license.svg)](https://packagist.org/packages/bugbuster/errorlog_enhanced)
+[![Latest Stable Version](https://poser.pugx.org/bugbuster/errorlog_enhanced/v/stable.svg)](https://packagist.org/packages/bugbuster/errorlog_enhanced) [![Total Downloads](https://poser.pugx.org/bugbuster/errorlog_enhanced/downloads.svg)](https://packagist.org/packages/bugbuster/errorlog_enhanced) [![Latest Unstable Version](https://poser.pugx.org/bugbuster/errorlog_enhanced/v/unstable.svg)](https://packagist.org/packages/bugbuster/errorlog_enhanced) [![License](https://poser.pugx.org/bugbuster/errorlog_enhanced/license.svg)](https://packagist.org/packages/bugbuster/errorlog_enhanced)
 
 
 ## About
